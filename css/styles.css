@@ -194,3 +194,15 @@ div.pie{
     }
     }
 
+.rotate {
+    animation: rotation 8s infinite linear;
+    }
+    
+    @keyframes rotation {
+        from {
+        transform: rotatey(0deg);
+        }
+        to {
+        transform: rotatey(359deg);
+        }
+    }
