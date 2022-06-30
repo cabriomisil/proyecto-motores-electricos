@@ -2,12 +2,13 @@ body{
     display: flex;
     font-size: 1rem;
     font-family: 'Raleway', sans-serif;
-
+    
     background-image: url(../imagenes/factory-indoor-photo.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     min-height: 130vh;
     position: relative;
+    
 }
 
 .titulo{
@@ -15,6 +16,7 @@ body{
     color: rgb(5, 59, 141);
     background-color: rgba(221, 237, 252, 0.384);
     display: inline-block;
+    width: 100%;
 }
 
 #article{
@@ -43,6 +45,7 @@ ul li a{
     display: block;
     padding: 5px 50px;
 }
+
 
 .cont{
     float: right;
@@ -168,6 +171,7 @@ div.pie{
 
 .grid__item-main{
     grid-area: main;
+    width: 100vw;
 }
 
 .grid__item-footer{
