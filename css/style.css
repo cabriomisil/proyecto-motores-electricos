@@ -1,0 +1,198 @@
+body {
+  display: flex;
+  font-size: 1rem;
+  font-family: "Raleway", sans-serif;
+  background-image: url(../imagenes/factory-indoor-photo.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 130vh;
+  position: relative;
+}
+
+.titulo {
+  font-weight: 700;
+  color: rgb(5, 59, 141);
+  background-color: rgba(221, 237, 252, 0.384);
+  display: inline-block;
+  width: 100%;
+}
+
+#article {
+  text-align: center;
+  background-color: rgba(162, 179, 253, 0.808);
+  font-weight: 700;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+ul {
+  list-style: none;
+  font-weight: 700;
+}
+
+ul li {
+  display: inline-block;
+}
+
+ul li a {
+  display: block;
+  padding: 5px 50px;
+}
+
+.cont {
+  float: right;
+}
+
+#footer {
+  background-color: rgba(255, 254, 187, 0.699);
+  position: absolute;
+  bottom: 0;
+  width: 100vw;
+  padding: 5px;
+  padding-left: 10px;
+}
+
+footer a {
+  text-align: left;
+  padding: 5px;
+}
+
+.redes {
+  font-size: 20px;
+}
+
+#nav {
+  background-color: rgba(255, 217, 4, 0.63);
+  padding: 3px;
+  margin: 1px;
+  width: 100vw;
+}
+
+a:hover {
+  color: rgb(0, 17, 255);
+}
+
+.acerca {
+  text-align: left;
+  background-color: rgba(162, 179, 253, 0.808);
+  font-weight: 400;
+  padding: 10px;
+}
+
+#motores {
+  text-align: center;
+  background-color: rgba(162, 179, 253, 0.808);
+  font-weight: 700;
+  padding: 5px;
+}
+
+#contenedor {
+  margin: 150px auto;
+  width: 600px;
+}
+
+.table {
+  width: 100%;
+  text-align: left;
+  background-color: rgb(255, 255, 255);
+  border-collapse: collapse;
+}
+
+th, td {
+  padding: 20px;
+}
+
+thead {
+  background-color: rgba(179, 182, 9, 0.788);
+  color: rgb(0, 0, 0);
+  border-bottom: solid 5px rgb(49, 62, 136);
+}
+
+tr:nth-child(even) {
+  background-color: #ddd;
+}
+
+tr:hover td {
+  background-color: rgb(253, 228, 0);
+  color: rgb(110, 109, 109);
+}
+
+.formulario {
+  background-color: rgba(0, 0, 0, 0.637);
+  color: rgb(255, 251, 0);
+  font-weight: 700;
+  padding: 50px;
+  font-size: 25px;
+}
+
+div.galeria {
+  margin: 10px 20px;
+  box-shadow: 0 4px 8px 0 rgb(243, 222, 29), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  float: left;
+  width: 300px;
+}
+
+div.pie {
+  text-align: center;
+  padding: 10px;
+  font-weight: 700;
+  background-color: rgba(240, 248, 255, 0.623);
+}
+
+.copy {
+  text-align: center;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 25% 25% 25% 25%;
+  grid-template-rows: 15vh repeat(2, 50vw) 10vh;
+  grid-template-areas: "header header header header" "main main main main" "main main main main" "footer footer footer footer";
+}
+
+.grid__item-header {
+  grid-area: header;
+}
+
+.grid__item-main {
+  grid-area: main;
+  width: 100vw;
+}
+
+.grid__item-footer {
+  grid-area: footer;
+}
+
+@media (max-width: 480px) {
+  body {
+    display: block;
+    background-image: none;
+    background-color: rgba(247, 248, 192, 0.678);
+  }
+  #imgindex {
+    transform: scale(1, 1);
+  }
+  .cont {
+    float: none;
+  }
+  ul li {
+    display: block;
+  }
+}
+.rotate {
+  animation: rotation 8s infinite linear;
+}
+
+@keyframes rotation {
+  from {
+    transform: rotatey(0deg);
+  }
+  to {
+    transform: rotatey(359deg);
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
