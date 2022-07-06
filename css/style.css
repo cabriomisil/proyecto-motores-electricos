@@ -81,6 +81,12 @@ a:hover {
   font-weight: 400;
   padding: 10px;
 }
+.acerca:hover {
+  background-color: rgba(221, 237, 252, 0.87);
+  color: rgb(5, 59, 141);
+  font-size: large;
+  font-weight: bold;
+}
 
 #motores {
   text-align: center;
