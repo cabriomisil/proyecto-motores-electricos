@@ -1,12 +1,15 @@
-body {
+.body {
   display: flex;
+  flex-direction: column;
   font-size: 1rem;
   font-family: "Raleway", sans-serif;
+  overflow-x: hidden;
   background-image: url(../imagenes/factory-indoor-photo.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  min-height: 130vh;
-  position: relative;
+  background-repeat: repeat;
+  background-size: auto;
+  min-height: 100%;
+  position: absolute;
+  max-width: 100%;
 }
 
 .titulo {
