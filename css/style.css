@@ -8,8 +8,10 @@
   background-repeat: repeat;
   background-size: auto;
   min-height: 100%;
-  position: absolute;
+  position: relative;
   max-width: 100%;
+  margin: 0;
+  padding-bottom: 50rem;
 }
 
 .titulo {
@@ -46,21 +48,43 @@ ul li a {
 }
 
 #footer {
-  background-color: rgba(255, 254, 187, 0.699);
+  background-color: rgba(255, 254, 187, 0.918);
   position: absolute;
+  right: 0;
   bottom: 0;
+  left: 0;
+  padding: 1rem;
   width: 100vw;
-  padding: 5px;
   padding-left: 10px;
 }
 
 footer a {
   text-align: left;
   padding: 5px;
+  font-weight: 700;
+  color: rgb(0, 0, 0);
+}
+
+#face {
+  color: rgb(0, 47, 255);
+  font-size: 3rem;
+}
+#face:hover {
+  transform: scale(1.5);
+}
+
+#insta {
+  color: rgb(255, 0, 140);
+  font-size: 3rem;
+}
+#insta:hover {
+  transform: scale(1.5);
 }
 
 .redes {
-  font-size: 20px;
+  color: rgb(0, 0, 0);
+  font-weight: 700;
+  font-size: 2rem;
 }
 
 #nav {
@@ -68,10 +92,6 @@ footer a {
   padding: 3px;
   margin: 1px;
   width: 100vw;
-}
-
-a:hover {
-  color: rgb(0, 17, 255);
 }
 
 .acerca {
