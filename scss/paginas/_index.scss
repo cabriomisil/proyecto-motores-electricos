@@ -32,9 +32,10 @@
 .grid-container {
     display: grid;
     grid-template-columns: 25% 25% 25% 25%;
-    grid-template-rows: 25% 50% 25%;
+    grid-template-rows: 10vh 100vh 100vh 20vh;
     grid-template-areas:
         "header header header header"
+        "main main main main"
         "main main main main"
         "footer footer footer footer";
 }
@@ -45,23 +46,15 @@
 
 .grid__item-main {
     grid-area: main;
-    width: 100vw;
-    /*&#galeria{
-        width: 100%;
-    }*/
 }
 
-/*
-.grid__item-aside{
-    grid-area: aside;
-}
-*/
 .grid__item-footer {
     grid-area: footer;
 }
 
 .rotate {
     animation: rotation 8s infinite linear;
+    width: fit-content;
 }
 
 @keyframes rotation {
@@ -84,9 +77,6 @@
         transform: scale(1,1);
     }
 
-    .cont{
-        float: none;
-    }
     ul li{
         display: block;
     }
