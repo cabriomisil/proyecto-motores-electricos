@@ -1,0 +1,20 @@
+.acerca{
+    text-align: left;
+    background-color: rgba(162, 179, 253, 0.808);
+    font-weight: bold;
+    font-size: 1rem;
+    padding: 10px;
+    &:hover{
+        background-color: rgba(221, 237, 252, 0.87);
+        color: rgb(5, 59, 141);
+        font-size: large;
+        font-weight: bolder;
+    }
+}
+
+.mapa{
+    margin: 20px;
+    padding: 100px;
+    background-color: rgba(63, 63, 63, 0.493);
+    width: max-content;
+}

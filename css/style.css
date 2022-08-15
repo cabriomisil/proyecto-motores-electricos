@@ -23,90 +23,69 @@
   width: 100%;
 }
 
-#article {
+.article {
   text-align: center;
   background-color: rgba(162, 179, 253, 0.808);
   font-weight: 700;
 }
 
-a {
-  text-decoration: none;
-  color: black;
+.grid-container {
+  display: grid;
+  grid-template-columns: 25% 25% 25% 25%;
+  grid-template-rows: 25% 50% 25%;
+  grid-template-areas: "header header header header" "main main main main" "footer footer footer footer";
 }
 
-ul {
-  list-style: none;
-  font-weight: 700;
+.grid__item-header {
+  grid-area: header;
 }
 
-ul li {
-  display: inline-block;
-}
-
-ul li a {
-  display: block;
-  padding: 5px 50px;
-}
-
-#footer {
-  background-color: rgba(255, 254, 187, 0.918);
-  position: absolute;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  padding: 1rem;
+.grid__item-main {
+  grid-area: main;
   width: 100vw;
-  padding-left: 10px;
+  /*&#galeria{
+      width: 100%;
+  }*/
 }
 
-footer a {
-  text-align: left;
-  padding: 5px;
-  font-weight: 700;
-  color: rgb(0, 0, 0);
+/*
+.grid__item-aside{
+    grid-area: aside;
+}
+*/
+.grid__item-footer {
+  grid-area: footer;
 }
 
-#face {
-  color: rgb(0, 47, 255);
-  font-size: 3rem;
-}
-#face:hover {
-  transform: scale(1.5);
+.rotate {
+  animation: rotation 8s infinite linear;
 }
 
-#insta {
-  color: rgb(255, 0, 140);
-  font-size: 3rem;
+@keyframes rotation {
+  from {
+    transform: rotatey(0deg);
+  }
+  to {
+    transform: rotatey(359deg);
+  }
 }
-#insta:hover {
-  transform: scale(1.5);
+@media (max-width: 480px) {
+  body {
+    display: block;
+    background-image: none;
+    background-color: rgba(247, 248, 192, 0.678);
+  }
+  #imgindex {
+    transform: scale(1, 1);
+  }
+  .cont {
+    float: none;
+  }
+  ul li {
+    display: block;
+  }
 }
-
-.redes {
-  color: rgb(0, 0, 0);
-  font-weight: 700;
-  font-size: 2rem;
-}
-
-.navbar {
-  z-index: 10;
-}
-
-.acerca {
-  text-align: left;
-  background-color: rgba(162, 179, 253, 0.808);
-  font-weight: bold;
-  font-size: 1rem;
-  padding: 10px;
-}
-.acerca:hover {
-  background-color: rgba(221, 237, 252, 0.87);
-  color: rgb(5, 59, 141);
-  font-size: large;
-  font-weight: bolder;
-}
-
-#motores {
+.motores {
   text-align: center;
   background-color: rgba(162, 179, 253, 0.808);
   font-weight: 700;
@@ -125,7 +104,8 @@ footer a {
   border-collapse: collapse;
 }
 
-th, td {
+th,
+td {
   padding: 20px;
 }
 
@@ -144,51 +124,22 @@ tr:hover td {
   color: rgb(110, 109, 109);
 }
 
-.formulario {
-  background-color: rgba(0, 0, 0, 0.637);
-  color: rgb(255, 251, 0);
-  font-weight: 700;
-  padding: 50px;
-  font-size: 25px;
+.carousel {
+  margin-top: 50px;
 }
 
-.copy {
-  text-align: center;
+.acerca {
+  text-align: left;
+  background-color: rgba(162, 179, 253, 0.808);
+  font-weight: bold;
+  font-size: 1rem;
+  padding: 10px;
 }
-
-.grid-container {
-  display: grid;
-  grid-template-columns: 25% 25% 25% 25%;
-  grid-template-rows: 15vh 50vh 10vh;
-  grid-template-areas: "header header header header" "main main aside aside" "footer footer footer footer";
-}
-
-.grid__item-header {
-  grid-area: header;
-}
-
-.grid__item-main {
-  grid-area: main;
-  width: 100vw;
-}
-.grid__item-main#galeria {
-  width: 175%;
-}
-
-.grid__item-aside {
-  grid-area: aside;
-}
-
-.grid__item-footer {
-  grid-area: footer;
-}
-
-.card {
-  font-weight: 700;
+.acerca:hover {
+  background-color: rgba(221, 237, 252, 0.87);
   color: rgb(5, 59, 141);
-  background-color: rgba(221, 237, 252, 0.897);
-  display: inline-block;
-  width: 100%;
+  font-size: large;
+  font-weight: bolder;
 }
 
 .mapa {
@@ -198,33 +149,85 @@ tr:hover td {
   width: max-content;
 }
 
-@media (max-width: 480px) {
-  body {
-    display: block;
-    background-image: none;
-    background-color: rgba(247, 248, 192, 0.678);
-  }
-  #imgindex {
-    transform: scale(1, 1);
-  }
-  .cont {
-    float: none;
-  }
-  ul li {
-    display: block;
-  }
-}
-.rotate {
-  animation: rotation 8s infinite linear;
+.formulario {
+  background-color: rgba(0, 0, 0, 0.637);
+  color: rgb(255, 251, 0);
+  font-weight: 700;
+  padding: 50px;
+  font-size: 25px;
 }
 
-@keyframes rotation {
-  from {
-    transform: rotatey(0deg);
-  }
-  to {
-    transform: rotatey(359deg);
-  }
+.btn {
+  background-color: rgb(238, 255, 0);
+  font-weight: bold;
+}
+.btn:hover {
+  background-color: black;
+}
+
+.inputnombre {
+  border-radius: 10px;
+  border-color: rgba(0, 4, 255, 0.87);
+}
+
+ul {
+  list-style: none;
+  font-weight: 700;
+}
+ul li {
+  display: inline-block;
+}
+ul li a {
+  display: block;
+  padding: 5px 50px;
+  text-decoration: none;
+  color: black;
+}
+
+.navbar {
+  z-index: 10;
+  background-color: rgba(255, 217, 4, 0.63);
+}
+
+#footer {
+  background-color: rgba(255, 254, 187, 0.918);
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 1rem;
+  width: 100vw;
+  padding-left: 10px;
+}
+#footer a {
+  text-align: left;
+  padding: 5px;
+  font-weight: 700;
+  /*color: rgb(0, 0, 0);*/
+}
+#footer .face {
+  color: rgb(0, 47, 255);
+  font-size: 3rem;
+}
+#footer .face:hover {
+  transform: scale(1.5);
+}
+#footer .insta {
+  color: rgb(255, 0, 140);
+  font-size: 3rem;
+}
+#footer .insta:hover {
+  transform: scale(1.5);
+}
+
+.redes {
+  color: rgb(0, 0, 0);
+  font-weight: 700;
+  font-size: 2rem;
+}
+
+.copy {
+  text-align: center;
 }
 
 /*# sourceMappingURL=style.css.map */

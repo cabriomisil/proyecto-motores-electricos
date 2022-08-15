@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
@@ -25,7 +25,7 @@
 <body class="body">
     <div class="grid-container">
         <header class="grid__item-header">
-            <nav class="navbar navbar-expand-lg bg-" style="background-color:  rgba(255, 217, 4, 0.63);">
+            <nav class="navbar navbar-expand-lg bg-">
                 <div class="container-fluid">
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
                         aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
@@ -60,13 +60,13 @@
                 <h1 class="titulo">Contacto</h1>
 
                 <label for="nombre">Nombre Completo:</label>
-                <input type="text" id="nombre" name="nombre" required><br>
+                <input class="inputnombre" type="text" id="nombre" name="nombre" required><br>
 
                 <label for="email">Correo electronico:</label>
-                <input type="email" name="email" id="email" placeholder="ejemplo@gmail.com" required>
+                <input class="inputnombre" type="email" name="email" id="email" placeholder="ejemplo@gmail.com" required>
 
                 <div><label for="consulta">Tipo de cliente</label></div>
-                <select name="cliente" id="cliente">
+                <select class="btn" name="cliente" id="cliente">
                     <option value="Particular">Particular</option>
                     <option value="Empresa">Empresa</option>
                 </select>
@@ -75,9 +75,9 @@
                     <input type="checkbox" name="acepta" id="acepta" value="1" />
                 </div>
 
-                <textarea name="consulta" cols="40" rows="15" placeholder="Escribe tu consulta"></textarea>
-                <div><input type="submit" value="Enviar" />
-                    <input type="reset" value="Borrar" />
+                <textarea class="inputnombre" name="consulta" cols="40" rows="15" placeholder="Escribe tu consulta"></textarea>
+                <div><input class="btn" type="submit" value="Enviar" />
+                    <input class="btn" type="reset" value="Borrar" />
                 </div>
 
             </form>
@@ -85,10 +85,10 @@
 
 
         <footer id="footer" class="grid__item-footer">
-            <h4 class="copy">Copyright - Todos los derechos reservados</h4>
+            <h2 class="copy">Copyright - Todos los derechos reservados</h2>
             <p class="redes">Redes sociales</p>
-            <a id="insta" class="fa-brands fa-instagram-square" href="https://instagram.com/Zimel"></a>
-            <a id="face" class="fa-brands fa-facebook" href="https://facebook.com/Zimel"></a>
+            <a  class="fa-brands fa-instagram-square insta" href="https://instagram.com/Zimel"></a>
+            <a  class="fa-brands fa-facebook face" href="https://facebook.com/Zimel"></a>
         </footer>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"

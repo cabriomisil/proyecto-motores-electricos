@@ -1,0 +1,93 @@
+.body {
+    display: flex;
+    flex-direction: column;
+    font-size: 1rem;
+    font-family: 'Raleway', sans-serif;
+    overflow-x: hidden;
+    background-image: url(../imagenes/factory-indoor-photo.jpg);
+    background-repeat: repeat;
+    background-size: auto;
+    max-height: 155vh;
+    position: relative;
+    max-width: 100%;
+    margin: 0;
+    padding-bottom: 50rem;
+    overflow-y: auto;
+}
+
+.titulo {
+    font-weight: 700;
+    color: $color1;
+    background-color: $color2;
+    display: inline-block;
+    width: 100%;
+}
+
+.article {
+    text-align: center;
+    background-color: rgba(162, 179, 253, 0.808);
+    font-weight: 700;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-rows: 25% 50% 25%;
+    grid-template-areas:
+        "header header header header"
+        "main main main main"
+        "footer footer footer footer";
+}
+
+.grid__item-header {
+    grid-area: header;
+}
+
+.grid__item-main {
+    grid-area: main;
+    width: 100vw;
+    /*&#galeria{
+        width: 100%;
+    }*/
+}
+
+/*
+.grid__item-aside{
+    grid-area: aside;
+}
+*/
+.grid__item-footer {
+    grid-area: footer;
+}
+
+.rotate {
+    animation: rotation 8s infinite linear;
+}
+
+@keyframes rotation {
+    from {
+        transform: rotatey(0deg);
+    }
+
+    to {
+        transform: rotatey(359deg);
+    }
+}
+
+@media(max-width: 480px){
+    body{
+        display: block;
+        background-image: none;
+        background-color: rgba(247, 248, 192, 0.678);
+    }
+    #imgindex{
+        transform: scale(1,1);
+    }
+
+    .cont{
+        float: none;
+    }
+    ul li{
+        display: block;
+    }
+    }
