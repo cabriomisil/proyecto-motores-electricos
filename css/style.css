@@ -32,7 +32,7 @@
 .grid-container {
   display: grid;
   grid-template-columns: 25% 25% 25% 25%;
-  grid-template-rows: 10vh 100vh 100vh 20vh;
+  grid-template-rows: 10vh auto auto 20vh;
   grid-template-areas: "header header header header" "main main main main" "main main main main" "footer footer footer footer";
 }
 
@@ -203,7 +203,7 @@ ul li a {
 
 .footer {
   background-color: rgba(255, 254, 187, 0.918);
-  position: relative;
+  position: absolute;
   right: 0;
   bottom: 0;
   left: 0;
